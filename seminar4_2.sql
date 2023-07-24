@@ -1,7 +1,3 @@
-create database homework4;
-
-use homework4;
-
 create table users
 (
     id  int auto_increment primary key,
@@ -48,7 +44,6 @@ CREATE TABLE Employee (
   Age INT NOT NULL,
   City VARCHAR(45) NOT NULL
 );
-
 INSERT INTO Employee (Id, `Name`, Department, Salary, Gender, Age, City) VALUES (1001, 'John Doe', 'IT', 35000, 'Male', 25, 'London');
 INSERT INTO Employee (Id, `Name`, Department, Salary, Gender, Age, City) VALUES (1002, 'Mary Smith', 'HR', 45000, 'Female', 27, 'London');
 INSERT INTO Employee (Id, `Name`, Department, Salary, Gender, Age, City) VALUES (1003, 'James Brown', 'Finance', 50000, 'Male', 28, 'London');
@@ -210,4 +205,5 @@ VALUES('9213333332','Миша','Рогозин', 2, 21);
 
 INSERT INTO MAN (PHONENUM,FIRSTNAME,LASTNAME,CITYCODE,YEAROLD)
 VALUES('9214444444','Алексей','Галкин', 1, 38);
+
 

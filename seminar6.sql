@@ -91,7 +91,7 @@ repeat
     select result;
  end //
  
- call print_num(10)
+ call print_num(10);
  
  
 create table employees

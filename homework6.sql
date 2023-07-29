@@ -26,3 +26,23 @@ call get_days_hours(123456);
 1 - слушатель верно создал функцию, которая принимает кол-во сек и формат их в кол-во дней часов. 
 2 - слушатель выведили только четные числа от 1 до 10.*/
 
+drop procedure if exists print_num;
+delimiter //
+create procedure print_num
+(
+    num int
+)
+begin
+declare n int; 
+declare result varchar(45) default "";
+set n = 2;
+repeat
+	set result = concat(result, n, " ");
+    set n = n + 2;
+    until n > num
+end repeat;
+select result;
+end //
+
+call print_num(30);
+
